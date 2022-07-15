@@ -57,8 +57,8 @@ public class BrowserSecurityConfig extends WebSecurityConfigurerAdapter {
                     .loginProcessingUrl("/login") // 处理表单登录 URL
                     .successHandler(authenticationSucessHandler) // 处理登录成功
                     .failureHandler(authenticationFailureHandler) // 处理登录失败
-                    .and()
-                .rememberMe()
+                .and()
+                    .rememberMe()
                     .tokenRepository(persistentTokenRepository()) // 配置 token 持久化仓库
                     .tokenValiditySeconds(3600) // remember 过期时间，单为秒
                     .userDetailsService(userDetailService) // 处理自动登录逻辑

@@ -4,11 +4,11 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>cc.mrbird</groupId>
-    <artifactId>Security</artifactId>
+    <artifactId>Security-SessionManager</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Security</name>
+    <name>Security-SessionManager</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>

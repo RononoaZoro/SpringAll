@@ -43,7 +43,7 @@ public class ValidateController {
 
     private SmsCode createSMSCode() {
         String code = RandomStringUtils.randomNumeric(6);
-        return new SmsCode(code, 60);
+        return new SmsCode(code, 600);
     }
 
     private ImageCode createImageCode() {
