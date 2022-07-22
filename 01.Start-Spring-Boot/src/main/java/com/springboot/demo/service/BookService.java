@@ -16,7 +16,7 @@ import java.util.stream.Collectors;
 @Service
 public class BookService {
 
-    private List<Book> list = Lists.newArrayList();
+    private List<Book> list;
 
     public BookService() {
         this.list = findAll();
