@@ -26,11 +26,12 @@ public class MyWebConfigurer implements WebMvcConfigurer {
                 .addPathPatterns("/**")
                 .excludePathPatterns("/index.html");
     }
-//
-//    @Override
-//    public void addResourceHandlers(ResourceHandlerRegistry registry) {
-//        registry.addResourceHandler("/api/file/**").addResourceLocations("file:" + "d:/workspace/img/");
-//    }
+
+    @Override
+    public void addResourceHandlers(ResourceHandlerRegistry registry) {
+        // 要这个 D:\data\picture\ 而不是这个D:\data\picture
+        registry.addResourceHandler("/api/file/**").addResourceLocations("file:" + "D:\\data\\picture\\");
+    }
 
     @Override
     public void addCorsMappings(CorsRegistry registry) {
