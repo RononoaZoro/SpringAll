@@ -6,7 +6,7 @@ security:
 
 spring:
   datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://dbwrite.aku:3306/security_demo?useUnicode=yes&characterEncoding=UTF-8&useSSL=false
-    username: akulaku
-    password: Admin123456
+    driver-class-name:
+    url:
+    username:
+    password:
